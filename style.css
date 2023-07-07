@@ -1,0 +1,81 @@
+#freelancerIMG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: 0, -2px, 20px, -2px black;
+}
+
+h1,
+ul,
+li {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+body {
+  font: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+
+  background-color: rgba(181, 181, 199, 0.587);
+  background-image: radial-gradient(
+    rgba(245, 245, 245, 0.743),
+    rgba(181, 181, 199, 0.587)
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.765);
+  color: whitesmoke;
+  top: 0;
+  border-bottom: 4px solid black;
+}
+
+nav {
+  background-color: rgba(245, 245, 245, 0.777);
+  color: rgb(73, 73, 73);
+  padding: 0.5rem;
+  border-bottom: 4px solid black;
+}
+
+main {
+  flex-grow: 1;
+  background-image: url(freelancer.webp);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(210, 210, 166);
+    background-image: radial-gradient(whitesmoke, rgb(106, 144, 106));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(210, 210, 166);
+    background-image: radial-gradient(whitesmoke, rgb(6, 70, 6));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    background-color: rgb(210, 210, 166);
+    background-image: radial-gradient(whitesmoke, rgb(2, 23, 2));
+  }
+}
